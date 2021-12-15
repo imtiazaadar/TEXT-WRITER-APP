@@ -44,7 +44,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class Text_Writer_App extends JFrame implements ActionListener{
-
+	// VARIABLES
 	private JTextArea textArea;
 	private JComboBox fontStyleBox;
 	private JScrollPane scrollPane;
