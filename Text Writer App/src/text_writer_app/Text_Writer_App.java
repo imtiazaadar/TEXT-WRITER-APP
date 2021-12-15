@@ -129,7 +129,7 @@ public class Text_Writer_App extends JFrame implements ActionListener{
 		fontStyleBox.setBounds(392, 20, 280, 50);
 		fontStyleBox.addActionListener(this);
 		this.add(fontStyleBox);
-		// FONT COLOR CHOOSER
+		// FONT COLOR CHOOSER BUTTON
 		fontColorButton = new JButton("COLOR");
 		fontColorButton.setBounds(261, 20, 130, 50);
 		fontColorButton.setBackground(new Color(198, 22, 22));
@@ -173,6 +173,7 @@ public class Text_Writer_App extends JFrame implements ActionListener{
 		});
 		this.add(fontSpinner);
 		this.add(scrollPane);
+		// MENU BAR
 		menuBar = new JMenuBar();
 		this.setJMenuBar(menuBar);
 		fileMenu = new JMenu("FILE");
@@ -181,6 +182,7 @@ public class Text_Writer_App extends JFrame implements ActionListener{
 		editMenu.add(Box.createRigidArea(new Dimension(200, 0)));
 		aboutMenu = new JMenu("ABOUT");
 		aboutMenu.add(Box.createRigidArea(new Dimension(200, 0)));
+		// MENU ITEM
 		newItem = new JMenuItem("NEW");
 		newItem.setIcon(newfileIcon);
 		newItem.setIconTextGap(7);
@@ -227,6 +229,7 @@ public class Text_Writer_App extends JFrame implements ActionListener{
 		aboutIt.setIcon(aboutIcon);
 		aboutIt.setIconTextGap(7);
 		aboutMenu.add(aboutIt);
+		// ACTION LISTENER
 		newItem.addActionListener(this);
 		newItem.setAccelerator(KeyStroke.getKeyStroke((char) KeyEvent.VK_N, ActionEvent.CTRL_MASK));
 		openItem.addActionListener(this);
